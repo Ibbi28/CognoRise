@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Ping Pong Game</title>
+</head>
+<body>
+    <!-- Title Screen -->
+    <div class="title-screen" id="title-screen">
+        <div class="background-animation"></div>
+        <h1 class="title">Ping Pong Game</h1>
+        <p class="welcome">Welcome to the game!<br>Click the button below to start playing.</p>
+        <button class="start-btn-title" id="start-btn-title">Ready to Play</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div class="game-screen" id="game-screen" style="display: none;">
+        <div class="header">
+            
+            <div class="buttons">
+                <button class="start-btn" id="start-btn">Start</button>
+                <button class="pause-btn" id="pause-btn">Pause</button>
+                <button class="restart-btn" id="restart-btn">Restart</button>
+                <button id="exit-btn">Exit</button>
+                <div class="pong-wrapper">
+                    <div class="player-title">Player</div>
+                    <div class="ai-title">AI</div>
+                    <canvas id="ping-pong" width="600" height="400"></canvas>
+                </div>
+                
+            </div>
+        </div>
+        <div class="pong-wrapper">
+            <canvas id="ping-pong" width="600" height="400"></canvas>
+        </div>
+    </div>
+</body>
+</html>
